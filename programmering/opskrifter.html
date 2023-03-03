@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon-rut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/opskrifter.css">
+</head>
+<body>
+    <div id="preloader"></div>
+    <header>
+        <figure id="logo">
+           <a href="index.html"><img src="./img/logo.png" alt="nippon logo"></a>
+        </figure>
+        <nav>
+           <div id="text-nav">
+               <ul class="nav-list">
+                   <li><a href="./måltidskasser.html">Måltidskasser</a></li>
+                   <li><a href="./opskrifter.html">Opskrifter</a></li>
+               </ul>
+           </div>
+           <div id="icon-nav">
+               <ul class="nav-list">
+                   <li><a href="./login.html"><img src="./img/profil-icon.png" alt="profil icon" class="icon"></a></li>
+                   <li><a href="./favoritter.html"><img src="./img/favorite-icon.png" alt="favorite icon" class="icon"></a></li>
+                   <li><a href="./kurv.html"><img src="./img/kurv-icon.png" alt="kurv icon" class="icon"></a></li>
+               </ul>
+           </div>
+       </nav>
+   </header>
+   <div id="bg-wrap">
+   <main>
+        <h1>Opskrifter</h1>
+        <section id="filter">
+            <h3>Filter</h3>
+            <div id="filter-gallery">
+                <button class="btn active" onclick="filterSelection('all')">Alle</button>
+                <button class="btn" onclick="filterSelection('nemt')">Nemt</button>
+                <button class="btn" onclick="filterSelection('middel')">Middel</button>
+                <button class="btn" onclick="filterSelection('advance')">Advanceret</button>
+                <button class="btn" onclick="filterSelection('vegetar')">Vegetar</button>
+                <button class="btn" onclick="filterSelection('glutenfri')">Glutenfri</button>
+            </div>
+        </section>
+        <section id="opskrift-liste">
+            <div class="opskriftCard vegetar nemt">
+                <a href="./ramen.html"><p>Ramén</p></a>
+                <button onclick="Toggle()" id="fav" class="btn-fav"><i class="fa-solid fa-heart"></i></button>
+                <img src="./img/ramen.jpg" alt="ramen opskrift">
+            </div>
+            <div class="opskriftCard advance">
+                <p>Dumpling</p>
+                <button onclick="Toggle1()" id="fav1" class="btn-fav"><i class="fa-solid fa-heart"></i></button>
+                <img src="./img/dumpling.jpg" alt="dumpling opskrift">
+            </div>
+            <div class="opskriftCard glutenfri middel">
+                <p>Sushi</p>
+                <button onclick="Toggle2()" id="fav2" class="btn-fav"><i class="fa-solid fa-heart"></i></button>
+                <img src="./img/sushi-1.jpg" alt="sushi opskrift">
+            </div>
+            <div class="opskriftCard vegetar glutenfri nemt">
+                <p>Wasabi</p>
+                <button onclick="Toggle3()" id="fav3" class="btn-fav"><i class="fa-solid fa-heart"></i></button>
+                <img src="./img/wasabi.jpg" alt="wasabi opskrift">
+            </div>
+            <div class="opskriftCard vegetar glutenfri nemt">
+                <p>Kartofel Salat</p>
+                <button onclick="Toggle4()" id="fav4" class="btn-fav"><i class="fa-solid fa-heart"></i></button>
+                <img src="./img/potatosalad.jpg" alt="kartofel salat opskrift">
+            </div>
+            <div class="opskriftCard vegetar middel">
+                <p>Stegte Risboller</p>
+                <button onclick="Toggle5()" id="fav5" class="btn-fav"><i class="fa-solid fa-heart"></i></button>
+                <img src="./img/risboller.jpg" alt="stegte risboller opskrift">
+            </div>
+        </section>
+   </main>
+   <footer>
+    <div class="footer-content">
+        <h4>Kundeservice</h4>
+        <a href="#">info@nippon.dk</a>
+        <a href="#">+45 20304030</a>
+    </div>
+    <div class="footer-content">
+        <h4>Adresse</h4>
+        <p>Ringvej Syd 104,</p>
+        <p>8260 Viby</p>
+        <p>Danmark</p>
+    </div>
+    <div class="footer-content">
+        <h4>SoMe</h4>
+        <div>
+            <a href="#" class="some"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" class="some"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="./js/opskrifter.js"></script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none"
+    })
+</script>
+</body>
+</html>

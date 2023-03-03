@@ -1,0 +1,218 @@
+/*Farver
+Rød: #b62e2e
+Lys rød: #cc4e4a
+Blå: #000033
+Off-White: #fff7f9 rgb(255, 247, 249)
+
+Font: 
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #fff7f9;
+}
+
+/*=======FÆLLES==================================*/
+
+p {
+    color: #000033;
+    cursor: default;
+}
+
+h4 {
+    color: #fff7f9;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    padding-bottom: 0.8em;
+    cursor: default;
+    font-weight: 500;
+}
+
+h1 {
+    display: grid;
+    cursor: default;
+    margin-left: 0.3em;
+    font-size: 3em;
+    text-align: center;
+    padding: 1em 0;
+    color: #000033;
+}
+
+.button {
+    background: #b62e2e;
+    border: none;
+    padding: 7px 20px;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    color: #fff7f9;
+    margin-top: 1.6em;
+    margin-left: 32.5em;
+    text-decoration: none;
+}
+
+.hej {
+    margin-bottom: 2em;
+}
+
+
+.button:hover {
+    opacity: 0.8;
+}
+
+/*=======PRELOADER==================================*/
+
+#preloader {
+    background: #fff7f9 url(../img/loading.gif) no-repeat center;
+    background-size: 30%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
+/*=======HEADER==================================*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff7f9;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    width: 90px;
+    padding: 10px;
+}
+
+.icon {
+    height: 35px;
+}
+
+.nav-list {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.nav-list li {
+    display: inline;
+    padding: 0 10px;
+    
+}
+
+#text-nav .nav-list li a {
+    text-decoration: none;
+    color: #000033;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.nav-list li a:hover {
+    opacity: 0.6;
+}
+
+/*=================MAIN========================*/
+
+main {
+    min-height: 800px;
+
+}
+
+/*=================LOG IND========================*/
+
+#opret
+{
+    display: grid;
+    text-align: center;
+    margin-left: 2.5em;
+    margin-top: -2.2em;
+}
+
+.container {
+    display: grid;
+    width: 2em;
+    text-align: center;
+    margin-left: 38.5em;
+}
+
+.bruger {
+    padding-bottom: 3em;
+    font-size: 1em;
+    color: #000033;
+}
+
+.kode {
+    padding-bottom: 3em;
+    font-size: 1em;
+    color: #000033;
+}
+
+input {
+    background: #ffffff;
+    padding: 7px 20px;
+    font-size: 1.0rem;
+    border-radius: 15px;
+    margin-top: 1em;
+    border-color: #b62e2e;
+    border-style: solid;
+}
+
+.bg-wrap {
+    background-image: url(../img/bg-blå.png);
+    background-size: cover;
+    width: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+
+/*=======FOOTER==================================*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.6em 4em;;
+}
+
+.footer-content {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #fff7f9;
+    padding-bottom: 0.5em;
+}
+
+.footer-content p {
+    color: #fff7f9;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+.some {
+    font-size: 1.8rem;
+    margin-right: 0.5em;
+}
+
+.some:hover {
+    color: #b62e2e;
+}

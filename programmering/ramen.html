@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="shortcut icon" href="./img/favicon-rut.png">
+    <link rel="stylesheet" href="css/ramen.css">
+</head>
+<body>
+    <div id="preloader"></div>
+    <header>
+        <figure id="logo">
+           <a href="index.html"><img src="./img/logo.png" alt="nippon logo"></a>
+        </figure>
+        <nav>
+           <div id="text-nav">
+               <ul class="nav-list">
+                   <li><a href="./måltidskasser.html">Måltidskasser</a></li>
+                   <li><a href="./opskrifter.html">Opskrifter</a></li>
+               </ul>
+           </div>
+           <div id="icon-nav">
+               <ul class="nav-list">
+                   <li><a href="./login.html"><img src="./img/profil-icon.png" alt="profil icon" class="icon"></a></li>
+                   <li><a href="./favoritter.html"><img src="./img/favorite-icon.png" alt="favorite icon" class="icon"></a></li>
+                   <li><a href="./kurv.html"><img src="./img/kurv-icon.png" alt="kurv icon" class="icon"></a></li>
+               </ul>
+           </div>
+       </nav>
+   </header>
+<div id="bg-wrap">
+<section>
+    <section class="overskrift">
+        <div id="overskrift-wrap">
+        <h1>Ramen</h1>
+        <button onclick="Favorit()" id="fav" class="btn-fav"><i class="fa-solid fa-heart"></i></button>
+        </div>
+        <h2>Lækker Japansk inspireret ramén, med grøntsager, nudler og æg.</h2>
+        <h3></h3>
+    </section>
+    <section class="opskrift">
+        <p>
+            <b>Dette skal du bruge:</b> <br><br><br>
+       <b> Til Ramen:</b><br><br>
+Grøntsagsboullion 1 ½ liter<br>
+Sojasauce 1 dl<br>
+Østerssauce 3 spsk<br>
+Mørk miso 3 spsk<br>
+Risnudler 200 g<br>
+Smør 10 g<br>
+Champignoner i kvarte 500 g<br>
+Groft salt ½ tsk<br>
+Friskkværnet peber<br>
+<br><br>
+<b>Til fyld:</b><br><br>
+Salatost i tern 200 g<br>
+Fintstrimlet savojkål 100 g<br>
+Hårdkogte æg 2 stk<br>
+Frisk rød chilipeber ½<br>
+Strimlede gulerødder 3 stk<br>
+Rød peberfrugt 1stk<br>
+<br><br>
+ </p>
+<img src="img/ramen.jpg" alt="Lækker ramen suppe fra Nippon">
+
+        </section>
+        <section class="resultat">
+            <p><b>Sådan gør du:</b><br><br>
+                Bring grøntsagsboullionen i kog og tilsæt herefter <br>sojasauce, 
+                østerssauce og mørk miso. <br>Pisk det sammen til miso pastaen er opløst. <br>
+                Risnudlerne tilberedes efter anvisningen på emballagen,<br>
+                lad dem herefter dryppe af i en sigte. <br>
+                Tilføj smørret til en pande og lad det blive gyldent. <br>
+                Tilsæt champignoner, salt og peber og steg det ved<br> jævn varme i 5 min. <br>
+                Sluk herefter for varmen. <br>
+                Skær peberfrugt, gulerødder, savojkål og æg<br> på den ønskede måde. <br>
+                Fordel herefter halvdelen af fyldet i fire skåle <br>
+                og anbring resten på et serveringsfad. <br>
+                Hav den varme suppe i en kande og hæld halvdelen i <br>de fire skåle. <br>
+                Brug resten af suppen til 2. servering. <br><br>
+                <b>Nyd din lækre Ramen suppe!</b></p>
+                <img src="img/let-icon.png" alt="sværhedsgrad let illustration">
+        </section>
+    </section>
+
+   <footer>
+    <div class="footer-content">
+        <h4>Kundeservice</h4>
+        <a href="#">info@nippon.dk</a>
+        <a href="#">+45 20304030</a>
+    </div>
+    <div class="footer-content">
+        <h4>Adresse</h4>
+        <p>Ringvej Syd 104,</p>
+        <p>8260 Viby</p>
+        <p>Danmark</p>
+    </div>
+    <div class="footer-content">
+        <h4>SoMe</h4>
+        <div>
+            <a href="#" class="some"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" class="some"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="./js/ramen.js"></script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none"
+    })
+</script>
+</body>
+</html>

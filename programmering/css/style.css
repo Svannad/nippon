@@ -1,0 +1,233 @@
+/*Farver
+Rød: #b62e2e
+Lys rød: #cc4e4a
+Blå: #000033
+Off-White: #fff7f9 rgb(255, 247, 249)
+
+Font: 
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #fff7f9;
+}
+/*=======FÆLLES==================================*/
+p {
+    color: #000033;
+    cursor: default;
+}
+
+h3 {
+    color: #000033;
+    font-size: 1.8rem;
+    cursor: default;
+    padding-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+h4 {
+    color: #fff7f9;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    padding-bottom: 0.8em;
+    cursor: default;
+    font-weight: 500;
+}
+
+.button {
+    background: #000033;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    color: #fff7f9;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+#onboarding, #hendvisning, #instafeed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+}
+
+#bg-wrap {
+    background-image: url(../img/bg-rød.png);
+    background-size: cover;
+    width: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+/*=======PRELOADER==================================*/
+
+#preloader {
+    background: #fff7f9 url(../img/loading.gif) no-repeat center;
+    background-size: 30%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
+/*=======HEADER==================================*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff7f9;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    width: 90px;
+    padding: 10px;
+}
+
+.icon {
+    height: 35px;
+}
+
+.nav-list {
+    list-style: none;
+    padding-right: 20px;
+}
+
+.nav-list li {
+    display: inline;
+    padding: 0 10px;
+    
+}
+
+#text-nav .nav-list li a {
+    text-decoration: none;
+    color: #000033;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.nav-list li a:hover {
+    opacity: 0.6;
+}
+
+/*=======MAIN==================================*/
+
+/*=======LANDING PAGE==================================*/
+#landingpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+#landingpage img {
+    width: 650px;
+}
+
+#tilbud-text {
+    text-align: center;
+    padding-top: 7.5em;
+}
+
+#tilbud-text h1 {
+    font-size: 5rem;
+    color: #000033;
+    padding-bottom: 0.5em;
+    cursor: default;
+}
+
+#tilbud-text h1 span {
+    color: #b62e2e;
+}
+
+#tilbud-text p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*=======ONBOARDING==================================*/
+
+#onboarding video {
+    width: 700px;
+}
+
+/*=======INSTAFEED==================================*/
+
+#instafeed {
+    width: 90%;
+    margin: auto;
+}
+
+.insta-post {
+    width: 300px;
+    box-shadow: 2px 2px 30px  rgb(255, 247, 249, 0.2);
+    overflow: hidden;
+}
+
+.insta-post img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.mySwiper {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*=======FOOTER==================================*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1.6em 4em;;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #fff7f9;
+    padding-bottom: 0.5em;
+}
+
+.footer-content p {
+    color: #fff7f9;
+    padding-bottom: 0.5em;
+}
+
+.some {
+    font-size: 1.8rem;
+    margin-right: 0.5em;
+}
+
+.some:hover {
+    color: #000033;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nippon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon-rut.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="preloader"></div>
+  <header>
+    <figure id="logo">
+       <a href="index.html"><img src="./img/logo.png" alt="nippon logo"></a>
+    </figure>
+    <nav>
+       <div id="text-nav">
+           <ul class="nav-list">
+               <li><a href="./måltidskasser.html">Måltidskasser</a></li>
+               <li><a href="./opskrifter.html">Opskrifter</a></li>
+           </ul>
+       </div>
+       <div id="icon-nav">
+           <ul class="nav-list">
+               <li><a href="./login.html"><img src="./img/profil-icon.png" alt="profil icon" class="icon"></a></li>
+               <li><a href="./favoritter.html"><img src="./img/favorite-icon.png" alt="favorite icon" class="icon"></a></li>
+               <li><a href="./kurv.html"><img src="./img/kurv-icon.png" alt="kurv icon" class="icon"></a></li>
+           </ul>
+       </div>
+   </nav>
+</header>
+    <div id="bg-wrap">
+    <main>
+        <section id="landingpage">
+            <div id="tilbud-text">
+                <h1>INTRO <span>TILBUD</span></h1>
+                <p>FÅ 30% PÅ DIN FØRSTE MÅNED <br> + <br> GRATIS STARTERKIT TIL JAPANSK</p>
+            </div>
+            <img src="./img/tilbud.png" alt="nippon starter tilbud">
+        </section>
+        <section id="onboarding">
+            <video src="./img/intronippon.mp4" controls></video>
+        </section>
+        <section id="hendvisning">
+            <h3>Find flere udvalg af vores måltidskasser</h3>
+            <a href="./måltidskasser.html" class="button">Se her</a>
+        </section>
+        <section id="instafeed">
+            <h3>Minder fra køkkener rundt omkring i Danmark</h3>   
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="insta-post">
+                        <img src="./img/insta-1.png" alt="instagram post fra nippon">
+                    </div>
+                </div>
+                  <div class="swiper-slide">
+                    <div class="insta-post">
+                        <img src="./img/insta-2.png" alt="instagram post fra nippon">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="insta-post">
+                        <img src="./img/insta-3.png" alt="instagram post fra nippon">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="insta-post">
+                        <img src="./img/insta-4.png" alt="instagram post fra nippon">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="insta-post">
+                        <img src="./img/insta-5.png" alt="instagram post fra nippon">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="insta-post">
+                        <img src="./img/insta-6.png" alt="instagram post fra nippon">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>         
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <h4>Kundeservice</h4>
+            <a href="#">info@nippon.dk</a>
+            <a href="#">+45 20304030</a>
+        </div>
+        <div class="footer-content">
+            <h4>Adresse</h4>
+            <p>Ringvej Syd 104,</p>
+            <p>8260 Viby</p>
+            <p>Danmark</p>
+        </div>
+        <div class="footer-content">
+            <h4>SoMe</h4>
+            <div>
+                <a href="#" class="some"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" class="some"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/script.js"></script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none"
+    })
+</script>
+</body>
+</html>
